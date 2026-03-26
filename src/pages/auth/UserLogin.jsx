@@ -26,7 +26,7 @@ const UserLogin = () => {
 
       console.log(response.data);
 
-      navigate("/"); // Redirect to home after login
+      navigate("/home"); // Redirect to home after login
     } catch (error) {
       console.error("Login error:", error);
       const message = error.response?.data?.message || "Login failed. Please check your credentials.";

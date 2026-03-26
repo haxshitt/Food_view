@@ -10,10 +10,10 @@ const BottomNav = () => {
   const handleLogout = async () => {
     try {
       await API.get("/api/auth/user/logout")
-      navigate("/user/login")
+      navigate("/")
     } catch (error) {
       console.error("Logout error:", error)
-      navigate("/user/login")
+      navigate("/")
     }
   }
 

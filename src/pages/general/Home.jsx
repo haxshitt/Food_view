@@ -18,7 +18,7 @@ const Home = () => {
                 const status = error?.response?.status;
 
                 if (status === 401 || status === 403) {
-                    navigate('/user/login');
+                    navigate('/');
                 } else {
                     console.error('Error fetching videos', error);
                 }
